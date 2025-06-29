@@ -92,7 +92,7 @@
                     </div>
                     <div class="input-container">
                         <label for="sarana">Sarana</label>
-                        <textarea id="sarana" name="sarana" rows="4" required><?= old('sarana', isset($peminjaman['sarana']) ? $peminjaman['sarana'] : '') ?></textarea>
+                        <textarea id="sarana" name="sarana" rows="4"><?= old('sarana', isset($peminjaman['sarana']) ? $peminjaman['sarana'] : '') ?></textarea>
                     </div>
                 </div>
 
@@ -115,7 +115,7 @@
                             <i class="fas fa-comment-alt"></i> </div>
                         <div class="input-container">
                             <label for="komentar">Komentar</label>
-                            <textarea id="komentar" name="komentar" rows="4" required> <?= (isset($peminjaman['komentar']) ? $peminjaman['komentar'] : '') ?></textarea>
+                            <textarea id="komentar" name="komentar" rows="4"> <?= (isset($peminjaman['komentar']) ? $peminjaman['komentar'] : '') ?></textarea>
                         </div>
                     </div>
                 <?php endif; ?>
@@ -123,6 +123,7 @@
                 <button type="submit" name="submit" class="submit-btn"><?= isset($peminjaman['id_peminjaman']) ? 'Simpan Perubahan' : 'Ajukan Peminjaman' ?></button>
                 <p class="disclaimer"><?= isset($peminjaman['id_peminjaman']) && session()->get('role') == 'admin' ? '*Menekan Simpan Perubahan juga akan mengirimkan konfirmasi ke pengguna melalui Whatsapp' : '' ?></p>
             </form>
+            <p class="btn-home"><a href="javascript:history.back()" >Kembali ke Dashboard</a></p>
         </div>
     </div>
 </body>

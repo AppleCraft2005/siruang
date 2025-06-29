@@ -45,6 +45,16 @@ h1 {
     align-items: flex-start;
 }
 
+.btn-home a{
+    color:#007bff;
+    font-size: 14px;
+}
+
+.btn-home {
+  margin-top: 5px;
+  text-align: center;
+}
+
 .icon-container {
     width: 40px;
     height: 40px;

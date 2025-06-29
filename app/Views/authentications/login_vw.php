@@ -26,7 +26,7 @@
                             <label for="password">Password</label>
                             <input type="password" id="password" name="password" class="form-control" placeholder="Masukkan password" required>
                         </div>
-                        <p class="btn-fg-pwd"><a href="<?= route_to('forgot_password') ?>" >Lupa Password</a></p>
+                        <!-- <p class="btn-fg-pwd"><a href="<?= route_to('forgot_password') ?>" >Lupa Password</a></p> -->
                         <button type="submit" class="btn-login">Login</button>
                     </form>
                     <p class="register-text">Belum punya akun? <a href="<?= route_to('register') ?>" class="register-link">Daftar</a></p>
